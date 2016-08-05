@@ -7,6 +7,7 @@ module Formula(
     , module Formula.Temperature
     , module Formula.Volume
     , module Formula.Weight
+    , module Formula.Time
 ) where
 
 
@@ -19,3 +20,4 @@ import Formula.Speed
 import Formula.Temperature
 import Formula.Volume
 import Formula.Weight
+import Formula.Time
