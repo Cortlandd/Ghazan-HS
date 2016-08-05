@@ -1,3 +1,5 @@
 # ConversionFormula
 
-## ConversionFormula is a small Haskell library for doing simple math conversions.
+## ConversionFormula is a small Haskell library for doing math conversions.
+
+## Spaces not tabs. size 2
