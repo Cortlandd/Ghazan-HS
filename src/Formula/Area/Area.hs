@@ -1,3 +1,0 @@
-module Formula.Area (
-    
-    ) where
