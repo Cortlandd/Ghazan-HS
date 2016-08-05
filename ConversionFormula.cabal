@@ -1,8 +1,8 @@
-name:                SimpleMath
+name:                ConversionFormula
 version:             0.1.0.0
 synopsis:            Simple project template from stack
-description:         SimpleMath is a small Haskell library for doing simple math conversions.
-homepage:            https://github.com/githubuser/SimpleMath
+description:         ConversionFormula is a small Haskell library for doing simple math conversions.
+homepage:            https://github.com/githubuser/ConversionFormula
 license:             BSD3
 license-file:        LICENSE
 author:              Cortland Walker
@@ -12,8 +12,8 @@ category:            Web
 build-type:          Simple
 cabal-version:       >=1.10
 
-executable SimpleMath
+executable ConversionFormula
   hs-source-dirs:      src
-  main-is:             Main.hs
+  main-is:             Formula.hs
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
