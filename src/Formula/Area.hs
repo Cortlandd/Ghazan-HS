@@ -1,24 +1,24 @@
 module Formula.Area (
   -- Convert Square Inches to Square Kilometer
-  sqInTOsqKm
+    sqInTOsqKm
   -- Convert Square Inches to Square Meters
-  sqInTOsqM
+  , sqInTOsqM
   -- Convert Square Inches to Square Feet
-  sqInTOsqFt
+  , sqInTOsqFt
   -- Convert Square Inches to Hectares
-  sqInTOhec
+  , sqInTOhec
   -- Convert Square Inches to Acres
-  sqInTOacre
+  , sqInTOacre
   -- Convert Square Inches to Square Centimeter
-  sqInTOsqCm
+  , sqInTOsqCm
   -- Convert Square Inches to Square Decimeter
-  sqInTOsqDm
+  , sqInTOsqDm
   -- Convert Square Inches to Square Mile
-  sqInTOsqMi
+  , sqInTOsqMi
   -- Convert Square Inches to Square Millimeter
-  sqInTOsqMm
+  , sqInTOsqMm
   -- Convert Square Inches to Square Yards
-  sqInTOsqYd
+  , sqInTOsqYd
     ) where
 
 sqInTOsqKm :: Floating a => a -> a
@@ -31,7 +31,7 @@ sqInTOsqFt :: Floating a => a -> a
 sqInTOsqFt x = x^2 * 0.0069444
 
 sqInTOhec :: Floating a => a -> a
-sqInTOhec x = x^2 x 0.000000064516
+sqInTOhec x = x^2 * 0.000000064516
 
 sqInTOacre :: Floating a => a -> a
 sqInTOacre x = x^2 / 6272640
