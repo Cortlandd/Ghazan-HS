@@ -1,24 +1,24 @@
 module Formula.Area (
-    -- Convert Square Inches to Square Kilometer
-    sqInTOsqKm
-    -- Convert Square Inches to Square Meters
-    sqInTOsqM
-    -- Convert Square Inches to Square Feet
-    sqInTOsqFt
-	-- Convert Square Inches to Hectares
-	sqInTOhec
-	-- Convert Square Inches to Acres
-	sqInTOacre
-	-- Convert Square Inches to Square Centimeter
-	sqInTOsqCm
-	-- Convert Square Inches to Square Decimeter
-	sqInTOsqDm
-	-- Convert Square Inches to Square Mile
-	sqInTOsqMi
-	-- Convert Square Inches to Square Millimeter
-	sqInTOsqMm
-	-- Convert Square Inches to Square Yards
-	sqInTOsqYd
+  -- Convert Square Inches to Square Kilometer
+  sqInTOsqKm
+  -- Convert Square Inches to Square Meters
+  sqInTOsqM
+  -- Convert Square Inches to Square Feet
+  sqInTOsqFt
+  -- Convert Square Inches to Hectares
+  sqInTOhec
+  -- Convert Square Inches to Acres
+  sqInTOacre
+  -- Convert Square Inches to Square Centimeter
+  sqInTOsqCm
+  -- Convert Square Inches to Square Decimeter
+  sqInTOsqDm
+  -- Convert Square Inches to Square Mile
+  sqInTOsqMi
+  -- Convert Square Inches to Square Millimeter
+  sqInTOsqMm
+  -- Convert Square Inches to Square Yards
+  sqInTOsqYd
     ) where
 
 sqInTOsqKm :: Floating a => a -> a
