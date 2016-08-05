@@ -21,6 +21,7 @@ module Formula.Area (
   , sqInTOsqYd
     ) where
 
+{- Converting Square Inches -}
 sqInTOsqKm :: Floating a => a -> a
 sqInTOsqKm x = x^2 / 1550000000
 
