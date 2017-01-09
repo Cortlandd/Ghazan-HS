@@ -19,7 +19,7 @@ import Formula.Class
 newtype Exa   a = Exa   {getExa   :: a}
   deriving (Num, Eq, Ord)
 
-instance Exa :=> Mono where
+instance Fractional a => Exa a :=> Mono a where
   convert (Exa x) = Mono (x * 1e18)
 
 -- | e15
