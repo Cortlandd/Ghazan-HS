@@ -18,6 +18,7 @@ Library
   build-depends:       base >= 4.7 && < 5
   exposed-modules:     Formula
                      , Formula.Class
+                     , Formula.Magnitude
                      , Formula.Area
                      , Formula.Length
                      , Formula.Liquid
