@@ -18,7 +18,7 @@ import Ghazan.Formula
 
 -- | e18
 newtype Exa a = Exa {getExa   :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Exa Exa where
   convert = id
@@ -35,7 +35,7 @@ instance Fractional a => Converts a Exa Peta where
 --------------------------------------------------------------------------------
 -- | e15
 newtype Peta a = Peta {getPeta :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Peta Peta where
   convert = id
@@ -49,7 +49,7 @@ instance Fractional a => Converts a Mono Peta where
 --------------------------------------------------------------------------------
 -- | e12
 newtype Tera a = Tera {getTera :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Tera Tera where
   convert = id
@@ -63,7 +63,7 @@ instance Fractional a => Converts a Mono Tera where
 --------------------------------------------------------------------------------
 -- | e9
 newtype Giga a = Giga {getGiga :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Giga Giga where
   convert = id
@@ -77,7 +77,7 @@ instance Fractional a => Converts a Mono Giga where
 --------------------------------------------------------------------------------
 -- | e6
 newtype Mega a = Mega {getMega :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Mega Mega where
   convert = id
@@ -91,7 +91,7 @@ instance Fractional a => Converts a Mono Mega where
 --------------------------------------------------------------------------------
 -- | e3
 newtype Kilo a = Kilo {getKilo :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Kilo Kilo where
   convert = id
@@ -105,7 +105,7 @@ instance Fractional a => Converts a Mono Kilo where
 --------------------------------------------------------------------------------
 -- | e2
 newtype Hecto a = Hecto {getHecto :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Hecto Hecto where
   convert = id
@@ -119,7 +119,7 @@ instance Fractional a => Converts a Mono Hecto where
 --------------------------------------------------------------------------------
 -- | e1
 newtype Deca a = Deca {getDeca :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Deca Deca where
   convert = id
@@ -133,6 +133,7 @@ instance Fractional a => Converts a Mono Deca where
 --------------------------------------------------------------------------------
 -- | The "no-op" unit - @*1@
 newtype Mono a = Mono {getMono :: a}
+  deriving (Show)
 
 instance Converts a Mono Mono where
   convert = id
@@ -141,7 +142,7 @@ instance Converts a Mono Mono where
 --------------------------------------------------------------------------------
 -- | e−1
 newtype Deci a = Deci {getDeci :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Deci Deci where
   convert = id
@@ -155,7 +156,7 @@ instance Fractional a => Converts a Mono Deci where
 --------------------------------------------------------------------------------
 -- | e−2
 newtype Centi a = Centi {getCenti :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Centi Centi where
   convert = id
@@ -169,7 +170,7 @@ instance Fractional a => Converts a Mono Centi where
 --------------------------------------------------------------------------------
 -- | e−3
 newtype Milli a = Milli {getMilli :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Milli Milli where
   convert = id
@@ -183,7 +184,7 @@ instance Fractional a => Converts a Mono Milli where
 --------------------------------------------------------------------------------
 -- | e−6
 newtype Micro a = Micro {getMicro :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Micro Micro where
   convert = id
@@ -197,7 +198,7 @@ instance Fractional a => Converts a Mono Micro where
 --------------------------------------------------------------------------------
 -- | e−9
 newtype Nano a = Nano {getNano :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Nano Nano where
   convert = id
@@ -211,7 +212,7 @@ instance Fractional a => Converts a Mono Nano where
 --------------------------------------------------------------------------------
 -- | e−12
 newtype Pico a = Pico {getPico :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Pico Pico where
   convert = id
@@ -225,7 +226,7 @@ instance Fractional a => Converts a Mono Pico where
 --------------------------------------------------------------------------------
 -- | e−15
 newtype Femto a = Femto {getFemto :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Femto Femto where
   convert = id
@@ -239,7 +240,7 @@ instance Fractional a => Converts a Mono Femto where
 --------------------------------------------------------------------------------
 -- | e−18
 newtype Atto a = Atto {getAtto :: a}
-  deriving (Num, Eq, Ord)
+  deriving (Num, Eq, Ord, Show)
 
 instance Converts a Atto Atto where
   convert = id
