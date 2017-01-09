@@ -1,0 +1,31 @@
+name:                Ghazan
+version:             0.1.0.0
+synopsis:            Simple project template from stack
+description:         Ghazan is a small Haskell library for doing simple conversions.
+homepage:            https://github.com/Cortlandd/ConversionGhazan
+license:             BSD3
+license-file:        LICENSE
+author:              Cortland Walker
+maintainer:          cortlandits@gmail.com
+copyright:           2016 Cortland Walker
+category:            Math
+build-type:          Simple
+cabal-version:       >=1.10
+
+Library
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , ghc-prim
+  exposed-modules:     Ghazan
+                     , Ghazan.Class
+                     , Ghazan.Magnitude
+                     , Ghazan.Area
+                     , Ghazan.Length
+                     , Ghazan.Liquid
+                     , Ghazan.Numerics
+                     , Ghazan.Speed
+                     , Ghazan.Temperature
+                     , Ghazan.Time
+                     , Ghazan.Volume
+                     , Ghazan.Weight
