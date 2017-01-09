@@ -1,36 +1,8 @@
-module Formula.Time (
-  {- Convert Days -}
-  -- Convert Day to Fortnight
-    dTOfortN
-  -- Convert Day to Hour
-  , dTOhr
-  -- Convert Day to Minute
-  , dTOmin
-  -- Convert Day to Second
-  , dTOsec
-  -- Convert Day to Week
-  , dTOwk
-  
-  {- Convert Weeks -}
-  -- Convert Weeks to Days
-  , wkTOd
-  
-  -- { Convert Minutes}
-  -- Convert Minutes to Days
-  , minTOd
-  
-  {- Convert Seconds -}
-  -- Convert Seconds to Days
-  , secTOd
-  
-  {- Convert Hours -}
-  -- Convert Hours to Days
-  , hrTOd
-  
-  {- Convert Fortnights -}
-  -- Convert Fortnights to Days
-  , fortnTOd
-  ) where
+{-# LANGUAGE
+    GeneralizedNewtypeDeriving
+  #-}
+
+module Formula.Time where
 
 {- Days -}
 dTOfortN :: Floating a => a -> a
@@ -67,3 +39,24 @@ hrTOd x = x / 24
 {- Fortnights -}
 fortnTOd :: Floating a => a -> a
 fortnTOd x = x * 14 
+
+
+-- * Types
+
+newtype Second a = Second {getSecond :: a}
+  deriving (Num, Eq, Ord)
+
+newtype Minute a = Minute {getMinute :: a}
+  deriving (Num, Eq, Ord)
+
+newtype Hour a = Hour {getHour :: a}
+  deriving (Num, Eq, Ord)
+
+newtype Day a = Day {getDay :: a}
+  deriving (Num, Eq, Ord)
+
+newtype Week a = Week {getWeek :: a}
+  deriving (Num, Eq, Ord)
+
+newtype Fortnight a = Fortnight {getFortnight :: a}
+  deriving (Num, Eq, Ord)
