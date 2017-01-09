@@ -1,7 +1,8 @@
 {-# LANGUAGE
     GeneralizedNewtypeDeriving
+  , TypeOperators
+  , MultiParamTypeClasses
   #-}
-
 
 {-|
 
@@ -11,9 +12,15 @@ https://en.wikipedia.org/wiki/Metric_prefix
 
 module Formula.Magnitude where
 
+import Formula.Class
+
+
 -- | e18
 newtype Exa   a = Exa   {getExa   :: a}
   deriving (Num, Eq, Ord)
+
+instance Exa :=> Mono where
+  convert (Exa x) = Mono (x * 1e18)
 
 -- | e15
 newtype Peta  a = Peta  {getPeta  :: a}
