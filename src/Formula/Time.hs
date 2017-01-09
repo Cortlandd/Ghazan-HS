@@ -15,7 +15,7 @@ module Formula.Time (
   -- Convert Weeks to Days
   , wkTOd
   
-  { Convert Minutes}
+  -- { Convert Minutes}
   -- Convert Minutes to Days
   , minTOd
   
