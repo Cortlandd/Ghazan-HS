@@ -10,5 +10,4 @@ module Formula.Class where
 class from :=> to where
   convert :: from -> to
 
-
 infixr 2 :=>
