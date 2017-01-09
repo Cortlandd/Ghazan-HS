@@ -6,5 +6,6 @@
 module Formula.Class where
 
 
+-- | Pronounced "Converts To"
 class a :=> b where
-  convert :: a -> b
+  to :: a -> b
