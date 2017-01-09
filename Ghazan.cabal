@@ -18,7 +18,7 @@ Library
   build-depends:       base >= 4.7 && < 5
                      , ghc-prim
   exposed-modules:     Ghazan
-                     , Ghazan.Class
+                     , Ghazan.Formula
                      , Ghazan.Magnitude
                      , Ghazan.Area
                      , Ghazan.Length

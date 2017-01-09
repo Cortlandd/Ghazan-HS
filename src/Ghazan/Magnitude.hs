@@ -32,6 +32,9 @@ instance Fractional a => Converts a Mono Exa where
 instance Fractional a => Converts a Exa Peta where
   convert = convert . Mono . getMono . convert
 
+instance Fractional a => Converts a Peta Exa where
+  convert = convert . Mono . getMono . convert
+
 --------------------------------------------------------------------------------
 -- | e15
 newtype Peta a = Peta {getPeta :: a}
