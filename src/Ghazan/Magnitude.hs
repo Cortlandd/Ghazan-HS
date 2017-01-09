@@ -135,6 +135,36 @@ instance Fractional a => Converts a Tera Mono where
 instance Fractional a => Converts a Mono Tera where
   convert (Mono x) = Tera (x * 1e12)
 
+instance Fractional a => Converts a Tera Giga where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Giga Tera where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Tera Mega where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Mega Tera where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Tera Kilo where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Kilo Tera where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Tera Hecto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Hecto Tera where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Tera Deca where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Deca Tera where
+  convert = convert . Mono . getMono . convert
+
 --------------------------------------------------------------------------------
 -- | e9
 newtype Giga a = Giga {getGiga :: a}
