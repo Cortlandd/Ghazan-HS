@@ -1,4 +1,4 @@
-module Formula.Area (
+module Ghazan.Area (
   -- Convert Square Inches to Square Kilometer
     sqInTOsqKm
   -- Convert Square Inches to Square Meters
@@ -51,6 +51,3 @@ sqInTOsqMm x = x^2 * 645.16
 
 sqInTOsqYd :: Floating a => a -> a
 sqInTOsqYd x = x^2 / 1296
-
-
-

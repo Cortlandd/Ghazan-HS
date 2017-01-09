@@ -1,23 +1,23 @@
-module Formula(
-      module Formula.Area
-    , module Formula.Length
-    , module Formula.Liquid
-    , module Formula.Numerics
-    , module Formula.Speed
-    , module Formula.Temperature
-    , module Formula.Volume
-    , module Formula.Weight
-    , module Formula.Time
+module Ghazan(
+      module Ghazan.Area
+    , module Ghazan.Length
+    , module Ghazan.Liquid
+    , module Ghazan.Numerics
+    , module Ghazan.Speed
+    , module Ghazan.Temperature
+    , module Ghazan.Volume
+    , module Ghazan.Weight
+    , module Ghazan.Time
 ) where
 
 
 -- Source Imports
-import Formula.Area
-import Formula.Length
-import Formula.Liquid
-import Formula.Numerics
-import Formula.Speed
-import Formula.Temperature
-import Formula.Volume
-import Formula.Weight
-import Formula.Time
+import Ghazan.Area
+import Ghazan.Length
+import Ghazan.Liquid
+import Ghazan.Numerics
+import Ghazan.Speed
+import Ghazan.Temperature
+import Ghazan.Volume
+import Ghazan.Weight
+import Ghazan.Time

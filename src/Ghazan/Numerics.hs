@@ -1,3 +1,3 @@
-module Formula.Numerics (
-    
+module Ghazan.Numerics (
+
     ) where

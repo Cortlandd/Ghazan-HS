@@ -2,7 +2,7 @@
     GeneralizedNewtypeDeriving
   #-}
 
-module Formula.Time where
+module Ghazan.Time where
 
 {- Days -}
 dTOfortN :: Floating a => a -> a
@@ -38,7 +38,7 @@ hrTOd x = x / 24
 
 {- Fortnights -}
 fortnTOd :: Floating a => a -> a
-fortnTOd x = x * 14 
+fortnTOd x = x * 14
 
 
 -- * Types

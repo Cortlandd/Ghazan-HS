@@ -1,3 +1,3 @@
-module Formula.Speed (
-    
+module Ghazan.Speed (
+
     ) where

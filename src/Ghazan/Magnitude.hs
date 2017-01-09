@@ -11,9 +11,9 @@ https://en.wikipedia.org/wiki/Metric_prefix
 
  -}
 
-module Formula.Magnitude where
+module Ghazan.Magnitude where
 
-import Formula.Class
+import Ghazan.Class
 
 
 -- | e18

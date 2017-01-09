@@ -1,3 +1,3 @@
-module Formula.Weight (
-    
+module Ghazan.Weight (
+
     ) where

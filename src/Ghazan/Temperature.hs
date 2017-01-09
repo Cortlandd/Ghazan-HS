@@ -1,3 +1,3 @@
-module Formula.Temperature (
-    
+module Ghazan.Temperature (
+
     ) where
