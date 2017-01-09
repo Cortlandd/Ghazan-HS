@@ -3,7 +3,7 @@
   , KindSignatures
   #-}
 
-module Ghazan.Class where
+module Ghazan.Formula where
 
 
 -- | Using an underlying numerical type @a@, we can impose

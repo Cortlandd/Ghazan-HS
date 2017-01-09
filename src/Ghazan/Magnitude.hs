@@ -13,7 +13,7 @@ https://en.wikipedia.org/wiki/Metric_prefix
 
 module Ghazan.Magnitude where
 
-import Ghazan.Class
+import Ghazan.Formula
 
 
 -- | e18
