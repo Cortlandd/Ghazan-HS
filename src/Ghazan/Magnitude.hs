@@ -243,6 +243,36 @@ instance Fractional a => Converts a Tera Deca where
 instance Fractional a => Converts a Deca Tera where
   convert = convert . Mono . getMono . convert
 
+instance Fractional a => Converts a Nano Tera where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Tera Nano where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Micro Tera where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Tera Micro where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Milli Tera where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Tera Milli where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Centi Tera where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Tera Centi where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Deci Tera where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Tera Deci where
+  convert = convert . Mono . getMono . convert
+
 --------------------------------------------------------------------------------
 -- | e9
 newtype Giga a = Giga {getGiga :: a}
