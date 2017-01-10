@@ -402,6 +402,42 @@ instance Fractional a => Converts a Femto Mono where
 instance Fractional a => Converts a Mono Femto where
   convert (Mono x) = Femto (x * 1e-15)
 
+instance Fractional a => Converts a Pico Femto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Femto Pico where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Nano Femto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Femto Nano where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Micro Femto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Femto Micro where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Milli Femto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Femto Milli where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Centi Femto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Femto Centi where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Deci Femto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Femto Deci where
+  convert = convert . Mono . getMono . convert
+
 --------------------------------------------------------------------------------
 -- | e−18
 newtype Atto a = Atto {getAtto :: a}
@@ -415,3 +451,45 @@ instance Fractional a => Converts a Atto Mono where
 
 instance Fractional a => Converts a Mono Atto where
   convert (Mono x) = Atto (x * 1e-18)
+
+instance Fractional a => Converts a Atto Femto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Femto Atto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Pico Atto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Atto Pico where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Nano Atto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Atto Nano where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Micro Atto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Atto Micro where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Milli Atto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Atto Milli where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Centi Atto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Atto Centi where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Deci Atto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Atto Deci where
+  convert = convert . Mono . getMono . convert
