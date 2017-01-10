@@ -566,6 +566,27 @@ instance Fractional a => Converts a Deci Nano where
 instance Fractional a => Converts a Nano Deci where
   convert = convert . Mono . getMono . convert
 
+instance Fractional a => Converts a Nano Mega where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Mega Nano where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Nano Kilo where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Kilo Nano where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Nano Hecto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Hecto Nano where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Nano Deca where
+  convert = convert . Mono . getMono . convert
+
 --------------------------------------------------------------------------------
 -- | e−12
 newtype Pico a = Pico {getPico :: a}
