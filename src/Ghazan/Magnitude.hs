@@ -71,6 +71,48 @@ instance Fractional a => Converts a Exa Deca where
 instance Fractional a => Converts a Deca Exa where
   convert = convert . Mono . getMono . convert
 
+instance Fractional a => Converts a Exa Femto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Femto Exa where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Pico Exa where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Exa Pico where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Nano Exa where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Exa Nano where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Micro Exa where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Exa Micro where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Milli Exa where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Exa Milli where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Centi Exa where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Exa Centi where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Deci Exa where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Exa Deci where
+  convert = convert . Mono . getMono . convert
+
 --------------------------------------------------------------------------------
 -- | e15
 newtype Peta a = Peta {getPeta :: a}
