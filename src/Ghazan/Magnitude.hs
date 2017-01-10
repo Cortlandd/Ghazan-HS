@@ -217,6 +217,24 @@ instance Fractional a => Converts a Mega Mono where
 instance Fractional a => Converts a Mono Mega where
   convert (Mono x) = Mega (x * 1e6)
 
+instance Fractional a => Converts a Mega Kilo where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Kilo Mega where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Mega Hecto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Hecto Mega where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Mega Deca where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Deca Mega where
+  convert = convert . Mono . getMono . convert
+
 --------------------------------------------------------------------------------
 -- | e3
 newtype Kilo a = Kilo {getKilo :: a}
