@@ -29,6 +29,9 @@ instance Fractional a => Converts a Exa Mono where
 instance Fractional a => Converts a Mono Exa where
   convert (Mono x) = Exa (x * 1e18)
 
+instance Fractional a => Converts a Exa Atto where
+  convert = convert . Mono . getMono . convert
+
 instance Fractional a => Converts a Exa Peta where
   convert = convert . Mono . getMono . convert
 
@@ -127,6 +130,9 @@ instance Fractional a => Converts a Peta Mono where
 instance Fractional a => Converts a Mono Peta where
   convert (Mono x) = Peta (x * 1e15)
 
+instance Fractional a => Converts a Peta Femto where
+  convert = convert . Mono . getMono . convert
+
 instance Fractional a => Converts a Peta Tera where
   convert = convert . Mono . getMono . convert
 
@@ -213,6 +219,9 @@ instance Fractional a => Converts a Tera Mono where
 instance Fractional a => Converts a Mono Tera where
   convert (Mono x) = Tera (x * 1e12)
 
+instance Fractional a => Converts a Tera Pico where
+  convert = convert . Mono . getMono . convert
+
 instance Fractional a => Converts a Tera Giga where
   convert = convert . Mono . getMono . convert
 
@@ -287,6 +296,9 @@ instance Fractional a => Converts a Giga Mono where
 instance Fractional a => Converts a Mono Giga where
   convert (Mono x) = Giga (x * 1e9)
 
+instance Fractional a => Converts a Giga Nano where
+  convert = convert . Mono . getMono . convert
+
 instance Fractional a => Converts a Giga Mega where
   convert = convert . Mono . getMono . convert
 
@@ -349,6 +361,9 @@ instance Fractional a => Converts a Mega Mono where
 instance Fractional a => Converts a Mono Mega where
   convert (Mono x) = Mega (x * 1e6)
 
+instance Fractional a => Converts a Mega Micro where
+  convert = convert . Mono . getMono . convert
+
 instance Fractional a => Converts a Mega Kilo where
   convert = convert . Mono . getMono . convert
 
@@ -399,6 +414,9 @@ instance Fractional a => Converts a Kilo Mono where
 instance Fractional a => Converts a Mono Kilo where
   convert (Mono x) = Kilo (x * 1e3)
 
+instance Fractional a => Converts a Kilo Milli where
+  convert = convert . Mono . getMono . convert
+
 instance Fractional a => Converts a Kilo Hecto where
   convert = convert . Mono . getMono . convert
 
@@ -437,6 +455,9 @@ instance Fractional a => Converts a Hecto Mono where
 instance Fractional a => Converts a Mono Hecto where
   convert (Mono x) = Hecto (x * 1e2)
 
+instance Fractional a => Converts a Hecto Centi where
+  convert = convert . Mono . getMono . convert
+
 instance Fractional a => Converts a Hecto Deca where
   convert = convert . Mono . getMono . convert
 
@@ -462,6 +483,9 @@ instance Fractional a => Converts a Deca Mono where
 
 instance Fractional a => Converts a Mono Deca where
   convert (Mono x) = Deca (x * 1e1)
+
+instance Fractional a => Converts a Deca Deci where
+  convert = convert . Mono . getMono . convert
 
 --------------------------------------------------------------------------------
 -- | The "no-op" unit - @*1@
