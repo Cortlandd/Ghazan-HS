@@ -546,6 +546,24 @@ instance Fractional a => Converts a Deci Micro where
 instance Fractional a => Converts a Micro Deci where
   convert = convert . Mono . getMono . convert
 
+instance Fractional a => Converts a Micro Kilo where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Kilo Micro where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Micro Hecto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Hecto Micro where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Micro Deca where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Deca Micro where
+  convert = convert . Mono . getMono . convert
+
 --------------------------------------------------------------------------------
 -- | e−9
 newtype Nano a = Nano {getNano :: a}
