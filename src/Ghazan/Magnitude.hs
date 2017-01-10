@@ -526,6 +526,18 @@ instance Fractional a => Converts a Deci Milli where
 instance Fractional a => Converts a Milli Deci where
   convert = convert . Mono . getMono . convert
 
+instance Fractional a => Converts a Milli Hecto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Hecto Milli where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Milli Deca where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Deca Milli where
+  convert = convert . Mono . getMono . convert
+
 --------------------------------------------------------------------------------
 -- | e−6
 newtype Micro a = Micro {getMicro :: a}
