@@ -275,6 +275,12 @@ instance Fractional a => Converts a Hecto Mono where
 instance Fractional a => Converts a Mono Hecto where
   convert (Mono x) = Hecto (x * 1e2)
 
+instance Fractional a => Converts a Hecto Deca where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Deca Hecto where
+  convert = convert . Mono . getMono . convert
+
 --------------------------------------------------------------------------------
 -- | e1
 newtype Deca a = Deca {getDeca :: a}
