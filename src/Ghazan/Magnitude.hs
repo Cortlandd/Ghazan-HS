@@ -625,3 +625,45 @@ instance Fractional a => Converts a Deci Atto where
 
 instance Fractional a => Converts a Atto Deci where
   convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Atto Peta where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Peta Atto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Atto Tera where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Tera Atto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Atto Giga where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Giga Atto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Atto Mega where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Mega Atto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Atto Kilo where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Kilo Atto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Atto Hecto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Hecto Atto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Atto Deca where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Deca Atto where
+  convert = convert . Mono . getMono . convert
