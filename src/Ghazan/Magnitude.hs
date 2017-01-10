@@ -411,6 +411,18 @@ instance Fractional a => Converts a Kilo Deca where
 instance Fractional a => Converts a Deca Kilo where
   convert = convert . Mono . getMono . convert
 
+instance Fractional a => Converts a Centi Kilo where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Kilo Centi where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Deci Kilo where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Kilo Deci where
+  convert = convert . Mono . getMono . convert
+
 --------------------------------------------------------------------------------
 -- | e2
 newtype Hecto a = Hecto {getHecto :: a}
