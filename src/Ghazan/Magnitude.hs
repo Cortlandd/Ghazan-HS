@@ -606,6 +606,42 @@ instance Fractional a => Converts a Deci Femto where
 instance Fractional a => Converts a Femto Deci where
   convert = convert . Mono . getMono . convert
 
+instance Fractional a => Converts a Femto Tera where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Tera Femto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Femto Giga where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Giga Femto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Femto Mega where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Mega Femto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Femto Kilo where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Kilo Femto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Femto Hecto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Hecto Femto where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Femto Deca where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Deca Femto where
+  convert = convert . Mono . getMono . convert
+
 --------------------------------------------------------------------------------
 -- | e−18
 newtype Atto a = Atto {getAtto :: a}
