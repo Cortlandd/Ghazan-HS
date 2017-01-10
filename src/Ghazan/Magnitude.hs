@@ -332,6 +332,12 @@ instance Fractional a => Converts a Centi Mono where
 instance Fractional a => Converts a Mono Centi where
   convert (Mono x) = Centi (x * 1e-2)
 
+instance Fractional a => Converts a Deci Centi where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Centi Deci where
+  convert = convert . Mono . getMono . convert
+
 --------------------------------------------------------------------------------
 -- | e−3
 newtype Milli a = Milli {getMilli :: a}
