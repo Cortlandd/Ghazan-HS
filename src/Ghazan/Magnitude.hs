@@ -388,6 +388,36 @@ instance Fractional a => Converts a Pico Mono where
 instance Fractional a => Converts a Mono Pico where
   convert (Mono x) = Pico (x * 1e-12)
 
+instance Fractional a => Converts a Nano Pico where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Pico Nano where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Micro Pico where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Pico Micro where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Milli Pico where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Pico Milli where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Centi Pico where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Pico Centi where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Deci Pico where
+  convert = convert . Mono . getMono . convert
+
+instance Fractional a => Converts a Pico Deci where
+  convert = convert . Mono . getMono . convert
+
 --------------------------------------------------------------------------------
 -- | e−15
 newtype Femto a = Femto {getFemto :: a}
